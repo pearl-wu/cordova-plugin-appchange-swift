@@ -24,6 +24,6 @@ fail = function (error) {
     alert("ERROR " + error);
 };
 
-hello.greet("World", win, fail);
+AppChange.check("YES", win, fail);
 
 ```
