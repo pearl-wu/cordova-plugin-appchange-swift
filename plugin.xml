@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.bais.hello"
+        id="com.bais.AppChange"
         version="0.6.0">
 
   <name>Hello</name>
@@ -9,10 +9,10 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/hello.js" target="js/hello.js"/>
+  <asset src="www/AppChange.js" target="js/AppChange.js"/>
 
-  <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+  <js-module src="www/AppChange.js" name="AppChange">
+    <clobbers target="AppChange" />
   </js-module>
   
   <platform name="ios">
@@ -20,13 +20,13 @@
 open xcode go into settings change `deployment target` to 7.0 or above and add `[Project Name]/Plugins/com.example.hello/Bridging-Header.h` to Objective-c Bridging Header under the Swift Compiler - Code Generation options      
     </info>
     <config-file target="config.xml" parent="/*">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello"/>
+      <feature name="AppChange">
+        <param name="ios-package" value="HWPAppChange"/>
       </feature>
     </config-file>
     
     <header-file src="src/ios/Bridging-Header.h" />
-    <source-file src="src/ios/Hello.swift"/>
+    <source-file src="src/ios/AppChange.swift"/>
   </platform>
 
 </plugin>
