@@ -1,7 +1,7 @@
 
 import Foundation
 
- @objc(HWPHello) class AppChange : CDVPlugin {
+ @objc(HWPAppChange) class AppChange : CDVPlugin {
     func check(command: CDVInvokedUrlCommand) {
         var message = command.arguments[0] as! String
         
